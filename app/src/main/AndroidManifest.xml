@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SimpleLogin"
         tools:targetApi="31">
         <activity
+            android:name=".ActivitySentCode"
+            android:exported="false" />
+        <activity
             android:name=".ActivityGetNumber"
             android:exported="true">
             <intent-filter>
