@@ -1,65 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    android:orientation="vertical"
-    tools:context=".ActivityGetNumber">
+<layout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="15dp"
-        android:layout_weight="2"
-        android:src="@drawable/_0824340_6374583" />
+    <data>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+        <variable
+            name="phoneNumber"
+            type="com.example.simplelogin.viewmodel.UserModel" />
+<variable
+    name="userLoginEvent"
+    type="com.example.simplelogin.commands.UserLogin" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
         android:orientation="vertical"
-        android:layout_weight="2">
+        tools:context=".ActivityGetNumber">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/enter_phone_number"
-            android:textColor="@color/light"
-            android:textSize="20sp" />
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/edt_phone"
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@drawable/phone_edt_login"
-            android:drawableRight="@drawable/baseline_phone_enabled_24"
-            android:hint="شماره موبایل : 09121111111"
-            android:inputType="phone"
-            android:layoutDirection="rtl"
-            android:maxLength="11"
-            android:padding="10dp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_send"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="80dp"
-            android:layout_marginLeft="80dp"
-            android:background="@drawable/login_btn"
-            android:text="ارسال کد"
-            android:textColor="@color/light"
-            android:textSize="20dp"/>
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:src="@drawable/_0824340_6374583" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enter_phone_number"
+                android:textColor="@color/light"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/phone_edt_login"
+                android:drawableRight="@drawable/baseline_phone_enabled_24"
+                android:hint="شماره موبایل : 09121111111"
+                android:inputType="phone"
+                android:layoutDirection="rtl"
+                android:maxLength="11"
+                android:padding="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/login_btn"
+                android:text="ارسال کد"
+                android:textColor="@color/light"
+                android:textSize="20dp" />
 
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-</LinearLayout>
+    </LinearLayout>
+</layout>
