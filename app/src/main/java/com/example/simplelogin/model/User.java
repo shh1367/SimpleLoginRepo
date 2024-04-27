@@ -1,15 +1,17 @@
 package com.example.simplelogin.model;
 
 public class User {
-    private String phoneNumber;
-    public String phoneNumberHint;
+    public String phoneNumber;
 
 
-    public User(String phoneNumberHint) {
-        this.phoneNumberHint = phoneNumberHint;
-    }
 
     public User(){
+
+    }
+
+    public User(String phoneNumber ) {
+        this.phoneNumber = phoneNumber;
+
 
     }
 

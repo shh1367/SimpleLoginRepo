@@ -1,4 +1,4 @@
-package com.elecomco.filimo.Class;
+package com.example.simplelogin.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -31,7 +31,7 @@
             android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/edt_phone"
+            android:id="@+id/edt_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
@@ -41,9 +41,10 @@
             android:drawableRight="@drawable/baseline_sms_24"
             android:hint="XXXXXX"
             android:inputType="number"
-            android:layoutDirection="rtl"
+            android:layoutDirection="ltr"
             android:maxLength="11"
-            android:padding="10dp" />
+            android:padding="15dp"
+            android:textSize="15sp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_success"
@@ -59,16 +60,30 @@
             android:textSize="20dp"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textCountTime"
+            android:id="@+id/text_count_time"
             android:padding="10dp"
             android:layout_marginTop="20dp"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:text="60"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/light"
             />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/btn_resend_code"
+            android:text="ارسال مجدد"
+            android:textColor="@color/light"
+            android:textSize="20dp"
+            android:visibility="gone"/>
 
 
 

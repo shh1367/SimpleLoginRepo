@@ -52,16 +52,16 @@
                 android:layout_marginRight="40dp"
                 android:background="@drawable/phone_edt_login"
                 android:drawableRight="@drawable/baseline_phone_enabled_24"
-                android:hint="@{User.phoneNumberHint}"
+                android:hint="09181111111"
                 android:inputType="phone"
-                android:layoutDirection="rtl"
+                android:layoutDirection="ltr"
                 android:maxLength="11"
                 android:padding="10dp"
-                android:text="@{User.phoneNumber}"/>
+                />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_send"
-                android:onClick="@{(v) -> UserLoginEvent.onClickLogin()}"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
