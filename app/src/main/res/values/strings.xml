@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SimpleLogin</string>
+    <string name="enter_phone_number">شماره موبایل خود را وارد نمایید</string>
 </resources>
